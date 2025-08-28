@@ -2,7 +2,7 @@ function AboutPage() {
   return (
     <div className="about-container">
       <img
-        src="/Scotty-Web/green-scott.png"
+        src="/green-scott.png"
         alt="About Page Image"
         className="about-image"
       />

@@ -14,11 +14,11 @@ function App() {
       <div>
         <ToolBar />
         <Routes>
-          <Route path="/Scotty-Web/" element={<IntroVideo />} />
-          <Route path="/Scotty-Web/Home" element={<IntroVideo />} />
-          <Route path="/Scotty-Web/work" element={<WorkPage />} />
-          <Route path="/Scotty-Web/about" element={<AboutPage />} />
-          <Route path="/Scotty-Web/contact" element={<ContactPage />} />
+          <Route path="/" element={<IntroVideo />} />
+          <Route path="/Home" element={<IntroVideo />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

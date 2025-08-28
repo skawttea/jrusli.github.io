@@ -7,16 +7,16 @@ function ToolBar() {
       <h1>
         :)
         <nav>
-          <Link to="/Scotty-Web/home">
+          <Link to="/home">
             <button>Home</button>
           </Link>
-          <Link to="/Scotty-Web/work">
+          <Link to="/work">
             <button>Work</button>
           </Link>
-          <Link to="/Scotty-Web/about">
+          <Link to="/about">
             <button>About</button>
           </Link>
-          <Link to="/Scotty-Web/contact">
+          <Link to="/contact">
             <button>Contact</button>
           </Link>
           <a href="https://www.youtube.com/@skawttea" target="_blank" rel="noopener noreferrer">

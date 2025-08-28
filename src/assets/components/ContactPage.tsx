@@ -2,7 +2,7 @@ function ContactPage() {
   return (
     <div className="contact-container">
       <img
-        src="/Scotty-Web/green-scott.png"
+        src="/green-scott.png"
         alt="Contact Page Image"
         className="contact-image"
       />
