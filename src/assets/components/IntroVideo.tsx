@@ -24,7 +24,7 @@ function BackgroundVideo() {
         className="homepage-video"
         onClick={toggleMute} 
       />
-       {isMuted && <div className="mute-overlay">Scotty Ninh <img src="/Scotty-Web/play_button.png" alt="play_button" className="play-button"/></div>}
+       {isMuted && <div className="mute-overlay">Scotty Ninh <img src="/play_button.png" alt="play_button" className="play-button"/></div>}
     </div>
   );
 }
