@@ -1,0 +1,318 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@font-face {
+  font-family: 'WaterwayFont';
+  src: url('/fonts/WaterwayFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SelectricRoman';
+  src: url('/fonts/SelectricRoman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /*background-image: url('public/GradientBackground.png');
+
+  background-size: cover;
+  background-position: center;
+*/
+background-color: #00000032;
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  line-height: 0;
+  background-color: black;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+}
+
+button {
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em .6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a00;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ffffff79;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px; 
+  margin-bottom: 100px;
+  cursor: pointer; 
+}
+
+.homepage-video {
+  width: 70%; 
+  height: auto;
+  object-fit: contain; 
+  margin: 0 auto;
+  position: relative;
+}
+
+.mute-overlay {
+  font-family: 'WaterwayFont', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  position: absolute; 
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 70.1%; 
+  height: 100%;
+  font-size: 12.5rem; 
+  font-weight: bold;
+  color: rgb(248, 248, 248);
+  pointer-events: none; 
+  z-index: 1;
+  /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  flex-direction: column;
+  pointer-events: auto;
+}
+
+.play-button {
+  display: none;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.mute-overlay:hover .play-button {
+  display: block;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.about-text-container {
+  width: 70%;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.about-image {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 2rem; 
+}
+
+.about-description {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 1rem; 
+  margin-right: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+.contact-image {
+  width: 30%;
+  height: auto;
+  margin-left: 2rem; 
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links a[href*="instagram"] .social-icon {
+  color: #E4405F; 
+}
+
+.social-links a[href*="tiktok"] .social-icon {
+  color: #ffffff;
+}
+
+.social-links a[href*="linkedin"] .social-icon {
+  color: #0A66C2;
+}
+
+.social-links a[href*="mailto"] .social-icon {
+  color: #646cff; 
+}
+
+.youtube-link a[href*="youtube"] .social-icon {
+  color: #FF0000; 
+  font-size: 20rem; 
+}
+
+.social-icon {
+  font-size: 3rem; 
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+  transform: scale(1.1); 
+}
+
+.email-text {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff; 
+  margin-top: 0.5rem; 
+  text-align: left; 
+}
+
+.social-text {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff; 
+  margin-top: 1.5rem;
+  text-align: left; 
+}
+
+.youtube-text {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff; 
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.youtubePage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.thumbnail-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5rem; 
+  padding: 1rem;
+  align-items: center;
+}
+
+.thumbnail-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.video-title {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.responsibility-text {
+  font-family: 'SelectricRoman', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  font-size: 0.6rem;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #bbbbbb;
+}
