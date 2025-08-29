@@ -5,7 +5,7 @@ function ToolBar() {
   return (
     <div>
       <h1>
-        :)
+        Scotty Ninh
         <nav>
           <Link to="/home">
             <button>Home</button>
