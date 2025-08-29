@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 function ToolBar() {
   return (
-    <div>
+    <div className="toolbar">
       <h1>
         <div className="toolbar-title">Scotty Ninh</div>
+        </h1>
         <nav>
           <Link to="/home">
             <button>Home</button>
@@ -23,7 +24,6 @@ function ToolBar() {
             <button>YouTube</button>
           </a>
         </nav>
-      </h1>
     </div>
   );
 }
