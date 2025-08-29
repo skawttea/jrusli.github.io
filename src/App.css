@@ -76,6 +76,7 @@ body {
   margin-left: 0rem;
   margin-top: 0;
   flex-wrap: wrap;
+  color: white;
 }
 
 .toolbar-title {
