@@ -5,7 +5,7 @@ function ToolBar() {
   return (
     <div>
       <h1>
-        Scotty Ninh
+        <div className="toolbar-title">Scotty Ninh</div>
         <nav>
           <Link to="/home">
             <button>Home</button>
