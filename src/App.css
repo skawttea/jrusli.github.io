@@ -21,12 +21,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /*background-image: url('public/GradientBackground.png');
-
-  background-size: cover;
-  background-position: center;
-*/
-background-color: #00000032;
+  background-color: #00000032;
   margin: 0;
 
   font-synthesis: none;
@@ -46,7 +41,20 @@ a:hover {
   color: #535bf2;
 }
 
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+.toolbar-item {
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
 
 body {
   margin: 0;
@@ -130,7 +138,7 @@ button:focus-visible {
   transform: translateX(-50%); 
   width: 70.1%; 
   height: 100%;
-  font-size: 12.5rem; 
+  font-size: 12.5vw; 
   font-weight: bold;
   color: rgb(248, 248, 248);
   pointer-events: none; 
@@ -148,8 +156,8 @@ button:focus-visible {
 
 .play-button {
   opacity: 0;
-  width: 150px;
-  height: 150px;
+  width: 10vw; 
+  height: 10vw; 
   cursor: pointer;
   transition: all 0.3s ease;
 }
