@@ -9,7 +9,7 @@ function WorkPage() {
       <a href="https://www.instagram.com/reel/DNoaPaOyYSt/?igsh=MTg1endrd2tibXh6dw==" target="_blank" rel="noopener noreferrer">
       <img src="/Thumbnail/Usal_x_Gorp_Girls_-_Hiking_Reel_v2.png" alt="Image 2" className="thumbnail-image" />
         <p className="video-title">Usal X Gorp Girls</p>
-        <p className="responsibility-text">Responsibilities: editing</p>
+        <p className="responsibility-text">Responsibilities: Editing</p>
       </a>
       <a href="https://youtu.be/ZnWIXqwIt0U?si=StqQJvsA7cwnfY0n" target="_blank" rel="noopener noreferrer">
         <img src="/Thumbnail/The_Poly_Post_-_Bronco_Esports_Documentary_Ep._1_Melee.png" alt="Image 3" className="thumbnail-image" />
