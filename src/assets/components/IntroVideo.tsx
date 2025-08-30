@@ -13,7 +13,7 @@ function BackgroundVideo() {
   };
 
   return (
-    <div className="video-container" onClick={toggleMute}>
+    <div className="video-container">
       <video
         ref={videoRef}
         src={videoFile}
@@ -24,7 +24,12 @@ function BackgroundVideo() {
         className="homepage-video"
         onClick={toggleMute} 
       />
-       {isMuted && <div className="mute-overlay">Scotty Ninh <img src="/play_button.png" alt="play_button" className="play-button"/></div>}
+      {isMuted && (
+        <div className="mute-overlay" onClick={toggleMute}>
+          <span>Scotty Ninh</span>
+          <img src="/play_button.png" alt="play_button" className="play-button"/>
+        </div>
+        )}
     </div>
   );
 }

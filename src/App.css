@@ -165,6 +165,7 @@ button:focus-visible {
   pointer-events: auto;
 }
 
+
 .play-button {
   opacity: 0;
   width: 10vw; 
@@ -172,6 +173,7 @@ button:focus-visible {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 
 .mute-overlay:hover .play-button {
   opacity: 1;
